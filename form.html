@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<title>Form to join us</title>
+		<link href="css/base.css" rel="stylesheet" type="text/css">
+		<script src="scripts/styleswitcher.js"></script>
+	</head>
+	<body id="f">		
+		<header class="header">
+				<nav class="nav" id="nav">
+				<div class="nav__header">
+					<img src="media/icon1.jpg" width="100" alt="" class="nav__logo">
+				</div>
+				<ul class="nav__links">
+					<li><a href="index.html" class="nav__single-link">Homepage</a></li>
+					<li><a href="books.html" class="nav__single-link">Books</a></li>
+					<li><a href="authors.html" class="nav__single-link">Authors</a></li>
+					<li><a href="form.html" class="nav__single-link">Form</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>If you want to be a member, please fill the form below.</h1>
+			<div class="form_container">
+				<form action="mailto:rasulkhanbayov@gmail.com" method="post" enctype="text/plain" id="login">
+					<fieldset>
+						<legend>Personal info</legend>
+						<label for="name"><strong>Name</strong></label><br>
+						<input type="text" size="60" name="name" id="name" placeholder="Your first name, e.g John" required><br>
+						<label for="surname"><strong>Surname</strong></label><br>
+						<input type="text" size="60" name="surname" id="surname" placeholder="Your last name, e.g Smith" required><br>
+						<label for="dateofbirth"><strong>Date of birth</strong></label><br>
+						<input type="text" size="60" name="dateofbirth" id="dateofbirth" placeholder="day-month-year" required><br>
+						<label for="email"><strong>E-mail address</strong></label><br>
+						<input type="text" size="60" name="email" id="email" placeholder="bookish@gmail.com" required><br>
+						<label for="number"><strong>Phone number</strong></label><br>
+						<input type="text" size="60" name="number" id="number" placeholder="" disabled><br>
+						<label for="story"><strong>Explain why you want to join</strong></label><br>
+						<textarea cols="60" rows="10" name="story" id="story" placeholder="With a few sentences, please"></textarea>
+						<br>
+						<div id="gender">
+						<p><strong>Gender</strong><br>
+						<input type="radio" name="gender" value="male" id="male"> <label for="male"> Male </label>
+						<input type="radio" name="gender" value="female" id="female"> <label for="female"> Female </label>
+						<input type="radio" name="gender" value="custom" id="custom"> <label for="custom"> Custom </label>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Rating</legend>
+						<p>How often do you read books?<br>
+							<input type="radio" name="rating" value="1" id="r1"> <label for="r1"> 1 - Never</label>
+							<input type="radio" name="rating" value="2" id="r2"> <label for="r2"> 2 - Less </label>
+							<input type="radio" name="rating" value="3" id="r3"> <label for="r3"> 3 - Normal</label>
+							<input type="radio" name="rating" value="4" id="r4"> <label for="r4"> 4 - High</label>
+							<input type="radio" name="rating" value="5" id="r5"> <label for="r5"> 5 - Very high</label>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Send</legend>
+							<input type="checkbox" name="newsletter" id="newsletter" value="yes">
+							<label for="newsletter">I'd like to get notifications</label>
+						<div class="submit" >
+							<input type="submit" value="Submit">
+							<input type="reset" value="Reset" >
+						</div>	
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<address>
+				<p>Author: Rasul Khanbayov
+				(<a href="mailto:rasulkhanbayov@gmail.com">
+				rasulkhanbayov@gmail.com</a>)<br>
+				H-1117 Budapest, Noname street 17</p>
+			</address>
+		</footer>
+	</body>
+</html>

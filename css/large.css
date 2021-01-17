@@ -1,0 +1,92 @@
+/* large text for people with visual impairement */
+
+@import url('base.css');
+body {
+	font-size:40px;
+}
+p{
+	font-size:30px;
+}
+
+li{
+	font-size: 30px;
+ text-transform: capitalize;
+}
+h2{
+	font-size: 40px;
+ text-transform: capitalize;
+}
+
+h3{
+	font-size: 40px;
+ text-transform: capitalize;
+}
+
+h4{
+	font-size: 25px;
+ text-transform: capitalize;
+}
+
+a#largetext {display: none;}
+a#normaltext {display: block;}
+
+header, main, footer {
+	width:90%;
+	max-width:1200px;
+	}
+	
+nav#forvisualimpairment { 
+background-color: #92a8d1;
+	position:absolute; 
+	width:220px;
+	right:20px;
+	top:10px;
+	border:3px solid white;
+	border-radius:0 10px 0 0 ; 
+}	
+
+nav#forvisualimpairment span {
+	background-image:url("../media/icons.png");
+	background-position:-330px 0px;
+}
+
+.banner__title{
+ font-size: 8rem;
+ letter-spacing: 0.3rem;
+ margin-bottom: 0.5rem;
+ font-style: italic;
+ text-transform: capitalize;
+}
+.banner__jobs{
+ letter-spacing: 0.3rem;
+ text-transform: capitalize;
+ font-size: 3rem;
+}
+
+article#in  aside{
+  font-size:30px;
+}
+
+img{
+	width: 400px;
+} 
+
+.nav__header img{
+	width: 200px;
+}
+
+
+.screenreader a:visited{color:#ccc}
+.screenreader a {position:static; left:0px;} 
+.screenreader a:focus {position:static; background:white}
+
+article#books, article#authors figure   {
+	column-count: 1;
+			}
+					
+		
+article#in  aside {
+	float:none;
+	width:90%;
+	margin:0;
+}
